@@ -16,6 +16,14 @@ Apache configuration).
 
     $ docs/configure.sh
 
+# Debian
+
+    apt-get install git mysql-server libapache2-mod-php5
+    cd /var/www
+    git clone git@github.com:michielbdejong/php-remoteStorage.git
+    cd php-remoteStorage
+
+
 # SELinux
 The install script already takes care of setting the file permissions of the
 `data/` directory to allow Apache to write to the directory. 
