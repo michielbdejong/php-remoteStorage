@@ -22,6 +22,9 @@ Apache configuration).
     cd /var/www
     git clone git@github.com:michielbdejong/php-remoteStorage.git
     cd php-remoteStorage
+    sh docs/configure.sh
+    chown www-data data
+    /etc/init.d/apache2 restart
 
 
 # SELinux
